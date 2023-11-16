@@ -16,8 +16,8 @@ const ItemsNav = () => {
       <NavbarContainer>
           <BrandName></BrandName>
           <NavLinks className={isMobileMenuOpen ? 'open' : ''}>
-              <NavLink to="/chairs">Chairs</NavLink>
-              <NavLink to="/lamps">Lamps</NavLink>
+              <NavLink to="/women">Women</NavLink>
+              <NavLink to="/men">Men</NavLink>
 
           </NavLinks>
           <MobileMenuIcon
@@ -35,7 +35,7 @@ const ItemsNav = () => {
 export default ItemsNav;
 
 const NavbarContainer = styled.nav`
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 5vh;
   max-width: 100%;
@@ -43,11 +43,11 @@ const NavbarContainer = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${secondaryColor};
+  background-color: white;
   color: #fff;
   padding: 20px 20px;
   z-index: 100;
-  margin-top: 100px;
+  margin-top: 90px;
 
   @media (max-width: 767px) {
       height: 15px;

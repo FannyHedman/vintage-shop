@@ -2,33 +2,34 @@ import React from 'react'
 import styled from 'styled-components'
 import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import heroImageStart from '../assets/white-blue-chairs2.jpg'
-import heroImageLamps from '../assets/herosectionlight.jpg'
-import heroImageChairs from '../assets/herosectionchairs.jpg'
+import heroImageWomen from '../assets/womenHeroImage.jpg'
+import heroWomen from '../assets/womenHero1.jpg'
+import CartComp from './CartComp'
 
 const HeroSection = () => {
     const location = useLocation()
 
     const getImageForUrl = () => {
-        if (location.pathname === '/lamps') {
-            return heroImageLamps
+        if (location.pathname === '/women') {
+            return heroWomen
         }
-        if (location.pathname === '/chairs') {
-            return heroImageChairs
+        if (location.pathname === '/men') {
+            return heroWomen
         }
-        return heroImageStart
+        return heroWomen
     }
 
     return (
         <CenteredContainer>
             {location.pathname === '/' && (
-                <Link to="/chairs">
-                    <OverlayLink>Explore Chairs</OverlayLink>
+                <Link to="/women">
+                    <OverlayLink>Explore our new collection</OverlayLink>
                 </Link>
             )}
             <div>
                 <img src={getImageForUrl()} alt="item-images" />
             </div>
+            <CartComp/>
         </CenteredContainer>
     )
 }
@@ -40,7 +41,7 @@ const CenteredContainer = styled.div`
     justify-content: center;
     align-items: center;
     /* height: auto; */
-    margin-top: 300px;
+    margin-top: 100px;
 `
 
 const OverlayLink = styled.div`

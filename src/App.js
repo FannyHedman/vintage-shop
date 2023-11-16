@@ -25,9 +25,12 @@
 
 import './App.css'
 import Container from './components/Container'
+// import { CartProvider } from '../context/CartContext';
+
 
 function App() {
     return (
+
         <div>
             <Container />
         </div>
