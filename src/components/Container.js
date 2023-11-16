@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { CartProvider } from '../context/CartContext';
 import HomePage from '../pages/homePage'
-import CheckoutPage from '../pages/checkoutPage'
+// import CheckoutPage from '../pages/checkoutPage'
 import NavBar from './NavBar'
 import ItemsNav from './ProductsNav'
 import HeroSection from './HeroSection'
@@ -12,6 +12,7 @@ import MenPage from '../pages/MenPage'
 import ProductDetails from './ProductDetails'
 import WomenProducts from './WomenProducts'
 import MenProducts from './MenProducts'
+import CheckOut from './CheckOut';
 
 const Container = () => {
     const [jsonData, setJsonData] = useState(null)
@@ -40,7 +41,7 @@ const Container = () => {
                     <Route path="/" element={<HomePage />} />
                     {/* <Route path="/women" element={<WomenPage />} /> */}
                     {/* <Route path="/women" element={<WomenPage />} /> */}
-                    <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route path="/checkout" element={<CheckOut />} />
                     <Route
                         path="/productdetails/:id"
                         element={<ProductDetails jsonData={jsonData} />}
