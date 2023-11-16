@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import heroImageWomen from '../assets/womenHeroImage.jpg'
 import heroWomen from '../assets/womenHero1.jpg'
-import CartComp from './CartComp'
 
 const HeroSection = () => {
     const location = useLocation()
@@ -29,7 +28,6 @@ const HeroSection = () => {
             <div>
                 <img src={getImageForUrl()} alt="item-images" />
             </div>
-            <CartComp/>
         </CenteredContainer>
     )
 }
