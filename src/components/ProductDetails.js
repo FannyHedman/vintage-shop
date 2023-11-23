@@ -101,6 +101,7 @@ import styled from 'styled-components';
 import axios from 'axios';
 import { useCart } from '../context/CartContext';
 import { useSaveItems } from '../context/SaveContext';
+import StyledButton from './StyledButton';
 
 const ProductDetails = ({ jsonData }) => {
   const { id } = useParams();
@@ -157,7 +158,7 @@ const ProductDetails = ({ jsonData }) => {
             <h2>{product.name}</h2>
             <p>{product.info}</p>
             <p>more information</p>
-            <CartButton onClick={handleAddToCart}>Add to Cart</CartButton>
+            <StyledButton onClick={handleAddToCart}>Add to Cart</StyledButton>
             <IconsContainer>
               <Icon onClick={() => handleSavedItem(product.id)} liked={isItemLiked(product.id)}>
                 &#10084;

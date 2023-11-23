@@ -41,7 +41,7 @@ const Container = () => {
                 <ItemsNav />
                 {/* <HeroSection /> */}
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/" element={<HomePage  jsonData={jsonData}/>} />
                     {/* <Route path="/women" element={<WomenPage />} /> */}
                     {/* <Route path="/women" element={<WomenPage />} /> */}
                     <Route path="/checkout" element={<CheckOut />} />
