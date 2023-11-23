@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation, Link } from 'react-router-dom'
+import { useSaveItems } from '../context/SaveContext'
 // import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -8,6 +9,8 @@ const MenProducts = ({ jsonData }) => {
     const [sortOrder, setSortOrder] = useState('asc')
     const [selectedColor, setSelectedColor] = useState(null)
     const [selectedStyle, setSelectedStyle] = useState(null)
+
+    const { addSavedItem, savedItems } = useSaveItems()
 
     const handleToggleSort = () => {
         setSortOrder((prevSortOrder) =>
@@ -57,6 +60,15 @@ const MenProducts = ({ jsonData }) => {
     const sortedAndFilteredData = jsonData
         ? sortAndFilterData([...jsonData])
         : []
+
+    const isItemLiked = (itemId) => {
+        return savedItems.some((savedItem) => savedItem.id === itemId)
+    }
+
+    const handleSavedItem = (itemId) => {
+        const selectedItem = jsonData.find((item) => item.id === itemId)
+        addSavedItem(selectedItem)
+    }
 
     return (
         <PageContainer>
@@ -139,8 +151,13 @@ const MenProducts = ({ jsonData }) => {
                         </StyledLink>
                         <ProductPrice>{item.price} SEK</ProductPrice>
                         <IconsContainer>
-                            <Icon>&#10084;</Icon>
-                            <Icon>&#128722;</Icon>
+                            <Icon
+                                onClick={() => handleSavedItem(item.id)}
+                                liked={isItemLiked(item.id)}
+                            >
+                                &#10084;
+                            </Icon>
+                            {/* <Icon>&#128722;</Icon> */}
                         </IconsContainer>
                     </ProductCard>
                 ))}
@@ -187,17 +204,16 @@ const ProductCard = styled.div`
     margin: 0 10px 20px;
     text-align: center;
     box-sizing: border-box;
-
-    transition: transform 0.2s ease-in-out;
-
-    &:hover {
-        transform: scale(1.1);
-    }
 `
 
 const ProductImage = styled.img`
     max-width: 100%;
     border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `
 const ProductName = styled.h5``
 
@@ -220,6 +236,12 @@ const Icon = styled.span`
     font-size: 20px;
     cursor: pointer;
     margin-left: 5%;
+    color: ${({ liked }) => (liked ? 'red' : 'pink')};
+    transition: transform 0.2s ease-in-out;
+
+&:hover {
+    transform: scale(1.3);
+}
 `
 
 const FilterButton = styled.button`

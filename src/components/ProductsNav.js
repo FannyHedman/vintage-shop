@@ -47,7 +47,8 @@ const NavbarContainer = styled.nav`
   color: #fff;
   padding: 20px 20px;
   z-index: 100;
-  margin-top: 90px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 
   @media (max-width: 767px) {
       height: 15px;

@@ -23,6 +23,7 @@ const NavBar = () => {
             <BrandName></BrandName>
             <NavLinks className={isMobileMenuOpen ? 'open' : ''}>
                 <NavLink to="/">Home</NavLink>
+                <NavLink to="/saved">Favorites</NavLink>
                 {/* <NavLink to="/checkout">Checkout</NavLink> */}
                 <div
                     onClick={handleDropdownToggle}
