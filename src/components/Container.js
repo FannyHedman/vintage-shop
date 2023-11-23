@@ -13,6 +13,8 @@ import ProductDetails from './ProductDetails'
 import WomenProducts from './WomenProducts'
 import MenProducts from './MenProducts'
 import CheckOut from './CheckOut';
+import LikedItems from './LikedItems';
+import { SaveProvider } from '../context/SaveContext';
 
 const Container = () => {
     const [jsonData, setJsonData] = useState(null)
@@ -32,11 +34,12 @@ const Container = () => {
 
     return (
       <CartProvider>
+        <SaveProvider>
         <BrowserRouter>
             <div>
                 <NavBar />
                 <ItemsNav />
-                <HeroSection />
+                {/* <HeroSection /> */}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     {/* <Route path="/women" element={<WomenPage />} /> */}
@@ -54,9 +57,14 @@ const Container = () => {
                         path="/women"
                         element={<WomenProducts jsonData={jsonData} />}
                     />
+                     <Route
+                        path="/saved"
+                        element={<LikedItems jsonData={jsonData} />}
+                    />
                 </Routes>
             </div>
         </BrowserRouter>
+        </SaveProvider>
         </CartProvider>
     )
 }

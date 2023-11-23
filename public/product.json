@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "name": "Pink Sock",
+        "name": "Dylan",
         "info": "Our sport socks are built to last, with reinforced seams, a strong heel, and toe. They are available in a variety of sizes to ensure a comfortable and snug fit for all feet.",
         "size": ["36-41", "42-47"],
         "gender": "men",
@@ -13,7 +13,7 @@
     },
     {
         "id": "2",
-        "name": "Yellow Sock",
+        "name": "Mark",
         "info": "Introducing our edgy and stylish sock, perfect for adding a touch of attitude to your outfit. Made from a soft and breathable blend of high-quality materials such as cotton and nylon, these socks are designed to provide all-day comfort and durability.",
         "size": ["36-41", "42-47"],
         "gender": "men",
@@ -25,7 +25,7 @@
     },
     {
         "id": "3",
-        "name": "Dotted Sock",
+        "name": "Kevin",
         "info": "Introducing our stylish and comfortable dotted sock, perfect for adding a touch of fun and flair to your outfit. Made from a soft and breathable blend of high-quality materials such as cotton and spandex, these socks are designed to provide all-day comfort and durability.",
         "size": ["36-41", "42-47"],
         "gender": "men",
@@ -37,7 +37,7 @@
     },
     {
         "id": "4",
-        "name": "Rose Sock",
+        "name": "Tom",
         "info": "Introducing our elegant and stylish roses sock, perfect for adding a touch of sophistication to your outfit. Made from a soft and breathable blend of high-quality materials such as cotton and nylon, these socks are designed to provide all-day comfort and durability.",
         "size": ["36-41", "42-47"],
         "gender": "men",
@@ -49,7 +49,7 @@
     },
     {
         "id": "5",
-        "name": "Cola Sock",
+        "name": "Henry",
         "info": "Our Coca Cola sock features a fun and eye-catching design, with the iconic Coca Cola logo and colors printed in vibrant detail. These socks are perfect for fans of all ages and make a great gift for Coca Cola collectors and enthusiasts.",
         "size": ["36-41", "42-47"],
         "gender": "men",
@@ -61,7 +61,7 @@
     },
     {
         "id": "6",
-        "name": "Mustard Sock",
+        "name": "Phil",
         "info": "Available in a variety of colors and sizes, these socks are perfect for any occasion - from casual outings to athletic activities. They feature a classic and timeless design that never goes out of style, making them a great addition to any wardrobe.",
         "size": ["36-41", "42-47"],
         "gender": "men",
@@ -73,7 +73,7 @@
     },
     {
         "id": "7",
-        "name": "Sport Sock",
+        "name": "Henrietta",
         "info": "Our sport socks are built to last, with reinforced seams, a strong heel, and toe. They are available in a variety of sizes to ensure a comfortable and snug fit for all feet.",
         "size": ["36-41", "42-47"],
         "gender": "women",
@@ -85,7 +85,7 @@
     },
     {
         "id": "8",
-        "name": "Sesame Sock",
+        "name": "Ophelia",
         "info": "Introducing our playful and comfortable Cookie Monster sock, perfect for fans of the beloved Sesame Street character. Made from a soft and breathable blend of high-quality materials such as cotton and polyester, these socks are designed to provide all-day comfort and durability.",
         "size": ["36-41", "42-47"],
         "gender": "women",
@@ -97,7 +97,7 @@
     },
     {
         "id": "9",
-        "name": "Stripe Sock",
+        "name": "Magdalena",
         "info": "Our striped sock features a classic and timeless design with bold and colorful stripes that add a pop of personality to your outfit. Available in a variety of colors and sizes, these socks are perfect for any occasion - from casual outings to formal events.",
         "size": ["36-41", "42-47"],
         "gender": "women",
@@ -109,7 +109,7 @@
     },
     {
         "id": "10",
-        "name": "Fruit Sock",
+        "name": "Juliana",
         "info": "Introducing our fun and comfortable fruit sock, perfect for adding a pop of color to your outfit. Made from high-quality materials such as cotton, nylon, and spandex, these socks are designed to be soft, breathable, and stretchy for all-day comfort.",
         "size": ["36-41", "42-47"],
         "gender": "women",
@@ -121,7 +121,7 @@
     },
     {
         "id": "11",
-        "name": "Purple Sock",
+        "name": "Victoria",
         "info": "These socks are designed to fit snugly and comfortably, with a ribbed top that keeps them in place without digging into your skin. They are perfect for pairing with your favorite shoes and sneakers, making them a versatile and stylish addition to your sock collection.",
         "size": ["36-41", "42-47"],
         "gender": "women",
@@ -133,7 +133,7 @@
     },
     {
         "id": "12",
-        "name": "Green Sock",
+        "name": "Angelina",
         "info": "Available in a variety of colors and sizes, these socks are perfect for any occasion - from casual outings to athletic activities. They feature a classic and timeless design that never goes out of style, making them a great addition to any wardrobe.",
         "size": ["36-41", "42-47"],
         "gender": "women",
