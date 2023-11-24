@@ -108,7 +108,7 @@ const CardContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -119,7 +119,7 @@ const ProductCard = styled.div`
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 16px;
-    width: calc(33.33% - 20px);
+    /* width: calc(33.33% - 20px); */
     margin: 0 10px 20px;
     text-align: center;
     box-sizing: border-box;
