@@ -157,7 +157,7 @@ const CheckOut = () => {
             </FormGroup>
             <ButtonGroup>
             {isPurchaseDisabled ? (
-    <p style={{border: 'solid 1px red', padding: '5px'}}>Nothing to purchase</p>
+    <p style={{color: 'darkred'}}>Nothing to purchase</p>
   ) : (
     <StyledButton type="submit">Purchase</StyledButton>
   )}

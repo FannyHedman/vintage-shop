@@ -18,6 +18,7 @@ const ItemsNav = () => {
           <NavLinks className={isMobileMenuOpen ? 'open' : ''}>
               <NavLink to="/women">Women</NavLink>
               <NavLink to="/men">Men</NavLink>
+              <NavLink to="/">All</NavLink>
 
           </NavLinks>
           <MobileMenuIcon
