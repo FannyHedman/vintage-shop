@@ -222,7 +222,7 @@ const NavBar = () => {
 
     return (
         <NavbarContainer>
-            <BrandName>Socks 'R' Us</BrandName>
+            <BrandName to="/">Socks 'R' Us</BrandName>
             <NavLinks className={isMobileMenuOpen ? 'open' : ''}>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/saved">Favorites</NavLink>
@@ -268,10 +268,10 @@ const NavbarContainer = styled.nav`
     }
 `
 
-const BrandName = styled.a`
+const BrandName = styled(Link)`
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: none;
     color: #fff;
     letter-spacing: 2px;

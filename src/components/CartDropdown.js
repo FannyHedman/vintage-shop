@@ -233,9 +233,7 @@ const CartDropdown = () => {
 
   const uniqueItems = [...new Set(cartItems.map((item) => item.id))];
 
-  // Calculate the total sum of items in the cart
   const totalSum = cartItems.reduce((sum, item) => {
-    // Convert item.price to a number before adding to the sum
     return sum + Number(item.price);
   }, 0);
 
@@ -294,13 +292,8 @@ const DropdownContainer = styled.div`
 const EmptyCartMsg = styled.p`
 color: black;
 font-size: 16px;
+position: relative;
 `
-
-const CartHeader = styled.h3`
-    margin: 0;
-    cursor: pointer;
-    color: black;
-`;
 
 const CartItemsContainer = styled.div`
     width: 100%;
